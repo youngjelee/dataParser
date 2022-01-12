@@ -1,0 +1,55 @@
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<html>
+    <head>
+        <title>DATA PARSER</title>
+    </head>
+    <body>
+        <h1>parser</h1>
+
+        <form id ="form1" method="POST"  action="/parse">
+            Element: <input type="text" id="element" name="element">
+            Host : <input type="text" id="host" name="host">
+            extractTag : <input type="text" name="extractTag">
+            <br/>
+            <textarea name="content" id="content" 
+            cols="100" rows= "15"></textarea> 
+            <!-- <button type="button" id="parse_button">parse</button> -->
+            <input type="submit" value="parse">
+        </form>
+    </body>
+
+    <body>
+        결과 : 
+        <div id="data"></div>
+
+    </body>
+
+</html>
+
+<script>
+// $(document).ready(function(){
+//     $("#parse_button").click(function(){
+//         // e.preventDefault();
+//         var form = $("#form1").serialize();
+//         console.log("test111111111111111111111", form);
+//         // var data = new FormData(form);
+//         var frmData = JSON.stringify(form);
+//         console.log("tset22222222222",frmData);
+//         $.ajax({
+//             type: 'POST',
+//             url: '/parse',
+//             data: frmData,
+//             dataType: 'Json'
+//         })
+//         .done(function(data){
+//             // $('#data').html(data);
+//             alert("1111");
+//             console.log("data 확인",data);
+//         });
+//     });
+// });
+  
+
+
+</script>
